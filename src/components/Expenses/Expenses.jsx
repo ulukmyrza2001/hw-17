@@ -8,7 +8,7 @@ import ExpensesList from './ExpensesList';
 const Expenses = (props) => {
   const [filteredYear,setFilteredYear] = useState('all')// селектен келген value'лер ушул стейтке тушот мисалы 2022, 2023...
   const filterChangeHandler = (selectedYear) =>{// селектен келген значениялар функция аркылуу келет башкача айтканда подьем состояние
-    setFilteredYear(selectedYear)// селектен onchange болуп келген значениялар ушул setFiltered'ке берилди
+    setFilteredYear(selectedYear)// селектен onchange болуп келген значениялар ушул setFiltered'ке берилди .
   }
   const filteredExpenses = props.items.filter((el)=>{// бул жерде props.item'ди филтр кылып жатабыз items каяктан келген,албетте app'тан келген
     return el.date.getFullYear().toString() === filteredYear //данныйдын датасындагы жылга селектен келген жыл барабар болсо анда ошону жаны массивке кайтарып алабыз
