@@ -17,7 +17,9 @@ const ExpensesList = ({expensesFilter,expenses,filteredYear}) => {
         })
 	}
     if(filteredYear == 'all' && expenses.length > 0){//эгер селектен келген значение 'all' деген созго барабар болсо жана филтр болбогон массив пустой болбосо анда ошол массив рендер болот
+        console.log(expenses);
        expensesContent = expenses.map((element) => {
+    
             return (
                 <ExpenseItem
                     key={Math.random()}
