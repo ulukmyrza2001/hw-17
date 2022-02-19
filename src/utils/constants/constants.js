@@ -1,0 +1,1 @@
+export const DATA_BASE = 'https://react-http-expensestracker-default-rtdb.firebaseio.com'

@@ -11,5 +11,32 @@ html {
 body {
   margin: 0;
   background-color: #3f3f3f;
+  padding-top: 50px;
+}
+.alert{
+  position: absolute;
+  top: 20px;
+  left: 29%;
+  margin: 0 auto;
+  width: 600px;
+animation: alert 600ms ease-out;
+}
+
+@keyframes alert {
+	0% {
+		transform: scale(1);
+	}
+	10% {
+		transform: scale(0.9);
+	}
+	30% {
+		transform: scale(1.1);
+	}
+	50% {
+		transform: scale(1.15);
+	}
+	100% {
+		transform: scale(1);
+	}
 }
 

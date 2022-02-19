@@ -3,12 +3,16 @@
   flex-direction: column;
   width: 5.5rem;
   height: 5.5rem;
-  border: 1px solid #ececec;
   background-color: #2a2a2a;
   color: white;
   border-radius: 12px;
   align-items: center;
   justify-content: center;
+	box-shadow: 0px 10px 16px rgb(32, 12, 51);
+  transition: 0.3s;
+}
+.expense-date:hover{
+	box-shadow: 4px 15px 22px rgb(32, 12, 51);
 }
 
 .expense-date__month {

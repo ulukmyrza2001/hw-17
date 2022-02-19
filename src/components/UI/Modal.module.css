@@ -1,0 +1,76 @@
+.modal {
+    position: fixed;
+    top: 30vh;
+    left: 10%;
+    width: 80%;
+    z-index: 100;
+    overflow: hidden;
+    background-color: rgba(22, 37, 71, 0.5);
+    border-radius: 5px;
+    animation: modal ease-in 0.3s;
+    box-shadow: 0px 0px 20px rgb(202, 204, 211);
+}
+.header {
+    background: #00315f77;
+    padding: 0.5rem;
+}
+.header h2 {
+    margin: 0;
+    color: rgb(140, 180, 226);
+    font-size: 20px;
+}
+.content {
+    padding: 1rem;
+}
+.content p{
+    font-size: 20px;
+    color: rgb(164, 191, 226);
+    font-weight: bold;
+    text-align: center;
+}
+.actions {
+    padding: 1rem;
+    display: flex;
+    justify-content: flex-end;
+}
+.actions button{
+  height: 40px;
+  box-shadow: 0px 0px 5px white;
+  margin-left:20px ;
+}
+.actions button:hover{
+    box-shadow: 0px 0px 20px white;
+  }
+@media (min-width: 768px) {
+    .modal {
+        left: calc(50% - 20rem);
+        width: 40rem;
+    }
+}
+@keyframes modal {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+.bg_layer {
+	position: absolute;
+    top: 0;
+    left: 0;
+	z-index: 15;
+	width: 100%;
+	height: 100%;
+	background: #000;
+	opacity: 0.8;
+    animation: BACK ease-in-out 0.2s;
+}
+@keyframes BACK {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 0.9;
+	}
+}
